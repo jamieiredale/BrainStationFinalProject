@@ -1,0 +1,312 @@
+:root {
+  --maroon: #df1763;
+  --primary-blue: #2317c2;
+  --violet: #7b2cd4;
+  --royal-blue: #4c7ef9;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 54px;
+  color: white;
+}
+
+h2 {
+  font-size: 34px;
+  color: var(--royal-blue);
+}
+
+h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.hero-section p {
+  color: white;
+}
+
+.icon-box i {
+  font-size: 45px;
+  background-color: white;
+  color: var(--violet);
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.pricing-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  overflow: auto;
+  max-width: 90rem;
+  padding: 0 2rem;
+  max-height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  background: white;
+}
+
+#logo {
+  width: 10%;
+  padding: 20px;
+}
+
+.nav li {
+  display: inline-block;
+  list-style-type: none;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.button--full-color {
+  border: 2px solid var(--maroon);
+  background: var(--maroon);
+  border-radius: 40px;
+  color: white;
+  padding: 15px 40px;
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+}
+
+.button--outline-color {
+  border: 2px solid var(--maroon);
+  border-radius: 40px;
+  color: var(--maroon);
+}
+
+.homepage-wrapper {
+  /* max-width: 90rem; */
+  background-image: url(../images/hero-img.jpeg);
+  background-color: blue;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blue-overlay {
+  background-color: rgba(76, 126, 249, 0.5);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-section {
+  max-width: 40%;
+}
+
+.packages {
+  max-width: 1244px;
+  padding: 0 150px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.packages-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.container-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 25px 50px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px 1px grey;
+}
+
+.card-light-blue {
+  background: var(--royal-blue);
+}
+
+.card-blue {
+  background: var(--primary-blue);
+}
+
+.card-purple {
+  background: var(--violet);
+}
+
+.features {
+  padding-top: 20px;
+  line-height: 2rem;
+  color: white;
+}
+
+.whiteoutline-button {
+  border: white 3px solid;
+  border-radius: 32px;
+  font-size: 18px;
+  background: transparent;
+  padding: 10px 50px;
+  margin-top: 50px;
+  color: white;
+}
+
+.benefits {
+  background-image: url(../images/about-photo.png);
+  min-height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.purple-overlay {
+  max-width: 1244px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-box {
+  display: block;
+  align-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.icon-box p {
+  color: white;
+  font-weight: 100;
+}
+
+.artist-images {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.artists-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.album-container-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.album-img {
+  padding: 15px;
+}
+footer {
+  background: var(--royal-blue);
+  margin-top: 50px;
+}
+
+footer .wrapper {
+  background: var(--royal-blue);
+}
+
+.icon-list i {
+  font-size: 32px;
+  padding: 10px 20px;
+  color: white;
+}
+/* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    width: 30%;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  .homepage-wrapper {
+    background-position: center;
+  }
+  .hero-section {
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px;
+  }
+  .packages {
+    padding: 0;
+  }
+  .container-section {
+    display: block;
+    align-items: center;
+    margin: 40px 40px;
+  }
+  .packages-heading {
+    text-align: center;
+  }
+  .card {
+    margin: 40px 0px;
+  }
+  .artist-images {
+    max-width: 100%;
+    margin: 0;
+  }
+  .album-container-section {
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    justify-content: center;
+  }
+  .album-img {
+    padding: 0;
+    width: 45%;
+  }
+}
